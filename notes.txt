@@ -1,3 +1,11 @@
+_________________________________
+My projects:
+_________________________________
+
+* RWDF:  
+Este proyecto consiste en volver responsive una pagina web 
+Quedé en ProjectPart1.Primer punto listo. (https://classroom.udacity.com/courses/ud893/lessons/3494350031/concepts/35019794250923) 
+
 ___________________________
 Using Dev Tools On Mobile
 ___________________________
@@ -8,8 +16,10 @@ ___________________________
 
 ___________________________
 
-chrome://inspect/
-
+* chrome://inspect/
+* https://www.browserstack.com/: test with different browsers in the cloud
+* https://developers.google.com/web/fundamentals/
+* https://developers.google.com/web/tools/chrome-devtools/shortcuts
 ___________________________
 PIXEL, DIPS AND DPR, CCS PIXELS
 ____________________________
@@ -44,10 +54,11 @@ Trick
 ___________________________
 
 * CCS allows overflow elements bigger than their conteiner. Then use Max-Width: 
-Img, embed, object, video {
-   max-width: 100%;
-} 
 
+	Img, embed, object, video {
+	   max-width: 100%;
+	} 
+* smaller devices can be as low as 320 pixels.
 
 * Start developing for small device. Then move to bigger one.
 
@@ -55,7 +66,12 @@ ___________________________
 TOUCH SCREEN
 ___________________________
 
-Fingers: 10mm width 40 ccs pixels. Then Buttons: 48x48 pixels (width x height) to have space for enough room
+Fingers: 10mm width 40 ccs pixels. Then Buttons: 48x48 pixels (width x height) to have space for enough room.
+
+	nav a, button {
+		min-width: 48px;
+		min-height: 48px;
+	}
 
 ___________________________
 
