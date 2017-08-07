@@ -68,9 +68,15 @@ ___________________________
 
 Fingers: 10mm width 40 ccs pixels. Then Buttons: 48x48 pixels (width x height) to have space for enough room.
 
-	nav a, button {
+	nav, a, button {
 		min-width: 48px;
 		min-height: 48px;
+	}
+
+	or add padding, which means that the padding is equivalent to 1.5 times the font size. Example:
+	
+	a {
+		padding: 1.5em;
 	}
 
 ___________________________
