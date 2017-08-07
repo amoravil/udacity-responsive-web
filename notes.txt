@@ -20,6 +20,19 @@ ___________________________
 * https://www.browserstack.com/: test with different browsers in the cloud
 * https://developers.google.com/web/fundamentals/
 * https://developers.google.com/web/tools/chrome-devtools/shortcuts
+
+____________________________
+TOOLS FOR RESPONSIVE WEBSIDES
+
+1. Media query
+2. flexbox
+
+Patterns:
+3. Column Drop
+4. Mostly fluid 
+5. Layout shifter
+5. 
+6. Off Canvas
 ___________________________
 PIXEL, DIPS AND DPR, CCS PIXELS
 ____________________________
@@ -80,6 +93,27 @@ Fingers: 10mm width 40 ccs pixels. Then Buttons: 48x48 pixels (width x height) t
 	}
 
 ___________________________
+Media Query. 
+___________________________
 
+Break point: The point at which the page change layout. Tip: Design it according to the content, no to the devices.
+
+Example:
+	@media screen and (min-width: 0px) and (max-width: 400px) {
+		body { background-color: red}
+	}
+
+Not use max-device-width.
+Not use import css
+
+___________________________
+Flexbox
+___________________________
+
+display: flex
+flex-wrap: wrap
+order attribute in css helps to define the order.
+
+___________________________
 
 
