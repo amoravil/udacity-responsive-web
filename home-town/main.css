@@ -131,10 +131,24 @@ main {
 
 /*
  *
- * Content
+ * Content. to be responsive
  *
  */
 
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Menu added to be responsive when 
+*  width is less than 550px
+*/
+.header__menu {
+  display: none;
+}
+.hero, .top-news, .scores, .weather, .recent-news {
+  order: 10;
+}
 
 /*
  *
