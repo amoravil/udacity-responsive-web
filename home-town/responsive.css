@@ -1,0 +1,82 @@
+/*Project part 2 - adding responsive patterns 
+         breakpoints with media query  and 
+         hamburger menu
+    
+*/
+      @media screen and (min-width: 0px) and (max-width: 550px) {
+        
+        /*Title small and keep it in one row with logo*/
+        .header__title{
+          font-size: 2em;
+          margin: 1.25em 0.25em;
+          }
+       
+        .header__inner {
+          width: 450px;
+        } 
+
+       .nav {
+          z-index: 10;
+          background-color: #fff;
+          width: 300px;
+          position: absolute;
+          /* This trasform moves the drawer off canvas. */
+          -webkit-transform: translate(-300px, 0);
+          transform: translate(-300px, 0);
+          /* Optionally, we animate the drawer. */
+          transition: transform 0.3s ease;
+        }
+        .nav.open {
+          -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+        }
+        .nav__item {
+          display: list-item;
+          border-bottom: 1px solid #E0E0E0;
+          width: 100%;
+          text-align: left;
+        }
+        .header__menu {
+          display: inline-block;
+          position: absolute;
+          right: 0;
+          padding: 1em;
+        }
+        .header__menu svg {
+          width: 32px;
+          fill: #E0E0E0;
+        }
+      }
+
+      @media screen and (min-width: 551px) {
+        .hero {
+          order:1;
+        }
+        .scores {
+          width: 50%;
+          order: 2;
+        }
+
+        .weather{
+          width: 50%;
+          order: 3;
+        }
+      }
+
+      @media screen and (min-width: 800px) {
+          body {
+          width: 800px;
+          margin-right: auto;
+          margin-left: auto;            
+        }
+        .hero {
+          order:1;
+        }
+        .scores {
+          order: 3;
+        }
+
+        .weather{
+          order: 2;
+        }
+      }

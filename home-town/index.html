@@ -9,93 +9,7 @@
     <title>Brighton Times</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="main.css">
-    <!-- Project part 2 - adding responsive patterns 
-         breakpoints with media query 
-    -->
-    <style type="text/css">
-      
-
-
-      @media screen and (min-width: 0px) and (max-width: 550px) {
-        
-        /*Title small and keep it in one row with logo*/
-        .header__title{
-          font-size: 2em;
-          margin: 1.25em 0.25em;
-          }
-       
-        .header__inner {
-          width: 450px;
-        } 
-
-       .nav {
-          z-index: 10;
-          background-color: #fff;
-          width: 300px;
-          position: absolute;
-          /* This trasform moves the drawer off canvas. */
-          -webkit-transform: translate(-300px, 0);
-          transform: translate(-300px, 0);
-          /* Optionally, we animate the drawer. */
-          transition: transform 0.3s ease;
-        }
-        .nav.open {
-          -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
-        }
-        .nav__item {
-          display: list-item;
-          border-bottom: 1px solid #E0E0E0;
-          width: 100%;
-          text-align: left;
-        }
-        .header__menu {
-          display: inline-block;
-          position: absolute;
-          right: 0;
-          padding: 1em;
-        }
-        .header__menu svg {
-          width: 32px;
-          fill: #E0E0E0;
-        }
-      }
-
-      @media screen and (min-width: 551px) {
-        .hero {
-          order:1;
-        }
-        .scores {
-          width: 50%;
-          order: 2;
-        }
-
-        .weather{
-          width: 50%;
-          order: 3;
-        }
-      }
-
-      @media screen and (min-width: 800px) {
-          body {
-          width: 800px;
-          margin-right: auto;
-          margin-left: auto;            
-        }
-        .hero {
-          order:1;
-        }
-        .scores {
-          order: 3;
-        }
-
-        .weather{
-          order: 2;
-        }
-      }
-
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="responsive.css">
   </head>
   <body>
 
@@ -105,7 +19,8 @@
         <h1 class="header__title">
           The Brighton Times
         </h1>
-          <!-- Menu to be shown when page is less than 550px width -->
+          <!-- Menu to be shown when page is less than 550px width 
+          to be responsive-->
         <a id="menu" class="header__menu">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
