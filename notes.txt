@@ -2,9 +2,14 @@ _________________________________
 My projects:
 _________________________________
 
-* RWDF:  
-Este proyecto consiste en volver responsive una pagina web 
-Quedé en ProjectPart1.Primer punto listo. (https://classroom.udacity.com/courses/ud893/lessons/3494350031/concepts/35019794250923) 
+* home-town:  
+Este proyecto consiste en volver responsive una pagina web. 
+- Incluye cambio en el ancho de las secciones (width:100%)
+- uso de patrones, media query y breakpoints
+
+* examples-with-patterns. 
+- Algunos ejemplos simples de uso de most-fluid pattern and 
+  Hamburger menu.
 
 ___________________________
 Using Dev Tools On Mobile
@@ -114,5 +119,15 @@ flex-wrap: wrap
 order attribute in css helps to define the order.
 
 ___________________________
+Fonts
+___________________________
 
+Ideal Measure of the length of a line of text:  45-90 cpl (characters per line)
+Consensus about  <<<<<< 65 cpl >>>>>>> on web
+
+Fonts read enough for read:  
+* font-size: 16px 
+* line height: 1.2em
+
+Use minor brackpoints to small changes: margins, paddings, font sizes, tamaño del icono. and displaly atributte inline-block
 
